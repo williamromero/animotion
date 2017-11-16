@@ -1,0 +1,137 @@
+@media all screen and (max-width: 380px) {
+
+}
+
+@media only screen and (max-width: $small-window) {
+  .nav-menu-block {
+    display: none;
+  }
+
+  .principal-home-slider {
+    height: 350px;
+    width: auto;
+  }
+
+  .content-general-blog {
+    height: auto;
+
+    .content-general-blog-case {
+      display: block !important;
+
+      .content-general-blog-boxes {
+        margin: 1em auto;
+      }
+
+      .middle-box-block {
+        margin: 0 auto !important;
+      }
+    }
+  } 
+}
+
+@media only screen and (max-width: $landscape-small-window) {
+}
+
+@media only screen and (max-width: $tablet-window) {
+  .principal-header {
+
+    .header-logo-block {
+      margin: 0 0.5em;
+    }
+
+    .nav-menu-block {
+      display: none;
+    }
+  }
+
+
+  .nav-list-navbar-responsive {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    height: 100%;
+    position: fixed;
+    transform: translateX(100%);
+    transition: all .5s;
+    width: 100%;
+    z-index: 10;
+
+    .nav-item-responsive {
+      color: #fff;
+      font-size: 1em;
+      list-style: none;
+      text-align: center;
+      text-decoration: none;
+      line-height: 2.5em;
+
+      &:hover {
+        background-color: #38c483;
+      }
+
+      .nav-link-responsive {
+        color: $white;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .nav-link-responsive-exit {
+        margin: 0 auto;
+        padding: 0;
+
+        i {
+          font-size: 1.8em;
+          position: absolute;
+          right: 1.1em;
+          top: 1em;
+        }
+      }
+    }
+  }
+
+  .nav-list-navbar-responsive-active {
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 10%, rgba(0,0,0,0.3) 75%);
+    display: block;
+    height: 100%;
+    padding: 0;
+    position: fixed;
+    transform: translateX(0%);
+    transition: all .5s;
+    width: 100%;
+    z-index: 101;
+  }
+
+  .nav-menu-block-responsive {
+    display: block;
+    position: relative;
+    z-index: 100;
+
+    .nav-menu-responsive-icon {
+      color: $white;
+      font-size: 30px;
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      position: absolute;
+      right: 1em;
+      top: .7em;
+      z-index: 5;
+    }
+  }
+
+  .footer-general-container {
+
+    .footer-general-container-block {
+      display: block;
+
+      .footer-general-container-block-boxes:nth-child(1) {
+        padding: 0 1em;
+  
+      }
+
+      .footer-pages-box,
+      .footer-info-box {
+        width: 45%;
+      }
+
+    }
+  }
+}

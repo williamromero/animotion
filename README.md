@@ -17,3 +17,9 @@ As we can see, we can create a repository using the next commands on git:
  
 ![Github Choices to Create a Repository from Command Line](https://s3-us-west-2.amazonaws.com/webres-studio.com/wiki_tuto_images/git_command_line_create_repository.png)
 
+### Create Styles:
+
+<pre>
+  cd app/assets/stylesheets/
+  touch variables.scss frontpages.scss partials.scss responsive.scss dashboard.scss
+</pre>
