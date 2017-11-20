@@ -2,75 +2,63 @@
   <div class="row">
     <div class="footer-general-container-block col-xs-12 col-md-10">
       <div class="footer-general-container-block-boxes col-xs-12 col-md-4">
-        <%#= link_to image_tag("logo.svg", :alt => "WEBRES STUDIO", :class => "footer-brand") + ('WEBRES <strong>STUDIO</strong>').html_safe, root_path, :class => 'footer-logo-link' %>
-        <p class="footer-general-container-block-boxes-parr">
-          <%#= t('layouts.footer.explanation_txt') %>
-        </p>
+        <ul class="footer-general-container-block-list-link">
+          <li><strong> CONTACTO </strong></li>
+          <li class="footer-nav-item">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span class="footer-nav-link">Guatemala City, Guatemala</span>
+          </li>
+          <li class="footer-nav-item">
+            <i class="fa fa-phone-square" aria-hidden="true"></i>
+            <%= mail_to 'tel:+50230443044', '(502) 3044-0569', class: 'footer-nav-link' %>
+          </li>
+          <li class="footer-nav-item">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <%= mail_to 'info@webres-studio.com', 'info@webres-studio.com', class: 'footer-nav-link' %>
+          </li>
+          <li class="footer-nav-item">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <span class="footer-nav-link">Mon - Fri 8:00am / 17:00pm</span>
+          </li>
+        </ul>
         <div class="footer-social-network-link">
           <div class="footer-social-network-link-blocks">
-            <%#= link_to image_tag("sn-icons-fb.svg", :alt => "facebook-fan-page", :class => "footer-sn-icons-img"), 'https://www.facebook.com/WebresStudio/' %>
+            <%= link_to 'https://www.facebook.com/WebresStudio/' do %>
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <% end %>
           </div>
           <div class="footer-social-network-link-blocks">
-            <%#= link_to image_tag("sn-icons-in.svg", :alt => "youtube-fan-page", :class => "footer-sn-icons-img"), 'https://www.instagram.com/webresstudio/' %>
-          </div>
-          <!--<div class="footer-social-network-link-blocks">
-            <%##= link_to image_tag("sn-icons-ln.svg", :alt => "linkedn-fan-page", :class => "footer-sn-icons-img"), root_path %>
-          </div>-->
-          <div class="footer-social-network-link-blocks">
-            <%#= link_to image_tag("sn-icons-tw.svg", :alt => "twitter-fan-page", :class => "footer-sn-icons-img"), 'https://twitter.com/WebResStudio' %>
+            <%= link_to 'www.instagram.com/webresstudio/' do %>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            <% end %>
           </div>
           <div class="footer-social-network-link-blocks">
-            <%#= link_to image_tag("sn-icons-yt.svg", :alt => "youtube-fan-page", :class => "footer-sn-icons-img"), root_path %>
+            <%= link_to 'https://www.youtube.com/channel/UCMkq89sDU26KjyZ3G6fDXFA' do %>
+              <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <% end %>
           </div>
-        </div>
+        </div>        
       </div>
       <div class="footer-general-container-block-boxes footer-pages-box col-xs-12 col-md-4">
         <ul class="footer-general-container-block-list-link">
-          <li><strong><%#= t('layouts.footer.pages_title') %></strong></li>
+          <li><strong> MAPA DE SITIO </strong></li>
           <li class="footer-nav-item">
-            <i class="fa fa-chevron-right" aria-hidden="true" style="font-size: 0.75em;"></i>
-            <%#= link_to t('frontpages.home.nav.nav_home'), root_path, class: 'footer-nav-link' %>
-            <%##= link_to 'Home', {:action => 'home', :controller => 'frontpages'}, class: 'footer-nav-link' %>
+            <%= link_to 'Home', {:action => 'home', :controller => 'frontpages'}, class: 'footer-nav-link' %>
           </li>
           <li class="footer-nav-item">
-            <i class="fa fa-chevron-right" aria-hidden="true" style="font-size: 0.75em;"></i>
-            <%#= link_to t('frontpages.home.nav.nav_services'), frontpages_services_path, class: 'footer-nav-link' %>
+            <%= link_to 'Servicios', {:action => 'home', :controller => 'frontpages'}, class: 'footer-nav-link' %>
           </li>
           <li class="footer-nav-item">
-            <i class="fa fa-chevron-right" aria-hidden="true" style="font-size: 0.75em;"></i>
-            <%#= link_to t('frontpages.home.nav.nav_blog'), blog_index_path, class: 'footer-nav-link' %>
+            <%= link_to 'Blog', {:action => 'home', :controller => 'frontpages'}, class: 'footer-nav-link' %>
           </li>
           <li class="footer-nav-item">
-            <i class="fa fa-chevron-right" aria-hidden="true" style="font-size: 0.75em;"></i>
-            <%#= link_to t('frontpages.home.nav.nav_contact'), contact_path, class: 'footer-nav-link' %>
+            <%= link_to 'Contacto', contact_path, class: 'footer-nav-link' %>
           </li>
         </ul>
       </div>
       <div class="footer-general-container-block-boxes footer-info-box col-xs-12 col-md-4">
         <ul class="footer-general-container-block-list-link">
-          <li><strong><%#= t('layouts.footer.information_title') %></strong></li>
-          <li class="footer-nav-item">
-            <%##= image_tag 'localization-icons.svg', class: 'footer-nav-link-img' %>
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <span class="footer-nav-link">Guatemala City, Guatemala</span>
-          </li>
-          <li class="footer-nav-item">
-            <%##= image_tag 'mobile-icons.svg', class: 'footer-nav-link-img' %>
-            <%##= link_to '(502) 3044-3044', class: 'footer-nav-link' %>
-            <i class="fa fa-phone-square" aria-hidden="true"></i>
-            <%#= mail_to 'tel:+50230443044', '(502) 3044-0569', class: 'footer-nav-link' %>
-          </li>
-          <li class="footer-nav-item">
-            <%##= image_tag 'card-icons.svg', class: 'footer-nav-link-img' %>
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            <%#= mail_to 'info@webres-studio.com', 'info@webres-studio.com', class: 'footer-nav-link' %>
-          </li>
-          <li class="footer-nav-item">
-            <%##= image_tag 'time-icons.svg', class: 'footer-nav-link-img' %>
-            <%##= link_to 'Mon - Fri 8:00am / 17:00pm', root_path, class: 'footer-nav-link' %>
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span class="footer-nav-link">Mon - Fri 8:00am / 17:00pm</span>
-          </li>
+          <li><strong> NEWSLETTER </strong></li>
         </ul>
       </div>
     </div>

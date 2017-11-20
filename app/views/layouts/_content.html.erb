@@ -1,0 +1,28 @@
+<%= render "dashboard/sidebar" %>
+<!-- Page Content -->
+<div id="page-content-wrapper">
+  <div class="page-content-wrapper-header-bar">
+    <div class="dashboard-principal-logo col-xs-12" style="margin: 0 auto; padding: 0;">
+      <a href="#menu-toggle" class="btn btn-default" id="menu-toggle" style="border: 1px solid #0275d8; position: relative; left: 1em; top: 0em; margin: 0 auto;">
+        &#9776;
+      </a>
+    </div>
+  </div>
+  
+  <%= yield %>
+
+  <div class="page-content-wrapper-footer-bar col-xs-12 col-md-12">
+    <div class="col-xs-3 col-md-9"></div>
+    <div class="page-content-wrapper-footer-bar-container col-xs-9 col-md-3">
+      <p> <%= image_tag 'logo.png' %>&nbsp;Dashboard Platform © V.1.1</p>
+    </div>
+  </div>
+  
+</div>
+<!-- /#page-content-wrapper -->
+<script>
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+</script>

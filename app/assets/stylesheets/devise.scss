@@ -1,0 +1,67 @@
+.principal-devise-screen {
+  background-color: #e0e6ef;
+  display: flex;
+  height: 100%; 
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+
+  .auth-box-container {
+    align-self: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;    
+
+    .principal-devise-container {
+      background-color: #f2f4f9;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+      margin: 0 auto;
+      padding: 0;
+
+      .principal-devise-container-header {
+        background-color: #343a44;
+        // box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+        padding: 0;
+        width: 100%;
+
+        h2 {
+          color: #FCFFFF;
+          font-size: 1.5em;
+          font-weight: bold;
+          padding: 0.75em;
+          text-align: center;
+        }
+      }
+
+      .principal-devise-container-forms {
+        // background-color: #f2f4f9;
+        margin: 1em;
+
+        .field {
+          padding: .25em 0;
+
+          label {
+            font-weight: bold;
+          }
+        }
+
+        .principal-form-button {
+          width: 100%;
+        }
+      }
+
+      .principal-devise-container-links {
+        margin: 1em;
+
+        .devise-form-icons {
+          color: #5e6a73;
+          margin: 0 .5em 0 0;
+        }
+
+        a {
+          color: #5e6a73;
+        }
+      }
+    }
+  }
+}
